@@ -1,15 +1,110 @@
-
 <!DOCTYPE html>
-<html>
-<head>
-   <!-- Website title -->
-    <title>Braa First Website</title>
-</head>
-<body>
-  <!-- Main heading -->
-    <!-- main part of site paragragh -->
-    <p>This is my first HTML website.</p>
+<html lang="en">
 
-    <!-- End of page content -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <!-- Website title -->
+    <title>Braa First Site</title>
+
+    <style>
+        /* General page style */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: white;
+        }
+
+        /* Welcome heading */
+        h1 {
+            text-align: center;
+            padding: 30px;
+            color: #222;
+        }
+
+        /* Main container */
+        .container {
+            display: flex;
+            gap: 30px;
+            padding: 30px;
+            align-items: center;
+        }
+
+        /* First section: Image */
+        .image-section {
+            flex: 1;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+        }
+
+        /* Second section: Web Design */
+        .web-design {
+            flex: 1;
+            text-align: center;
+        }
+
+        /* Web Design title */
+        .web-design h2 {
+            color: #222;
+            font-size: 28px;
+        }
+
+        /* Web Design description */
+        .web-design p {
+            color: #777;
+            font-size: 16px;
+            line-height: 1.8;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .image-section,
+            .web-design {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Welcome message -->
+    <h1>Welcome to braa first site</h1>
+
+    <!-- Main content -->
+    <div class="container">
+
+        <!-- Mountain image -->
+        <div class="image-section">
+            <img
+                src="https://images.unsplash.com/photo-1464822759023-fed622ff2c3b"
+                alt="Mountain Image">
+        </div>
+
+        <!-- Web Design content -->
+        <div class="web-design">
+
+            <h2>Web Design</h2>
+
+            <p>
+                Web design is the process of
+                creating beautiful and modern
+                websites.
+            </p>
+
+        </div>
+
+    </div>
+
 </body>
 </html>
